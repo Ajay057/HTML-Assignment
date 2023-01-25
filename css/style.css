@@ -2,7 +2,7 @@ body{
     background-color: rgb(196, 0, 0);
 }
 
-/* Left Hand side images CSS */
+/* Left Hand side images CSS : Starts Here*/
 .circleImage img{
     position:relative;
     float: left;
@@ -19,9 +19,9 @@ body{
     border: 20px solid #ffffff;;
     border-radius: 2000px;
 }
+/* End's here */
 
-
-/* Right Hand side Form(div2) CSS */
+/* Right Hand side Form(div2) CSS: starts here*/
 #div2{
 
     width: 50%;
@@ -35,7 +35,6 @@ body{
     width: 272px;
     height: 58px;
 }
-
 #div2 .description{
     font-size: 40px;
     margin-top: 19.17px;
@@ -45,7 +44,6 @@ body{
     /* margin-left: 100px; */
     /* margin-right: 500px; */
 }
-
 #div2 .login p{
     font-size: 25px;
     margin-top: 31.87px;
@@ -53,12 +51,10 @@ body{
     font-family: 'Roboto', sans-serif;
     /* margin-left: 100px; */
 }
-
 #div2 .color{
     color: rgb(204, 0, 0);
     font-family: 'Roboto', sans-serif;
 }
-
 #div2 .username, .password{
     color: rebeccapurple;
     width: 429px;
@@ -81,7 +77,6 @@ body{
     height: 58px;
     margin-top: 106px;
 }
-
 .button{
     margin-top: 30.5px;
     margin-right: 180px;
@@ -107,12 +102,11 @@ body{
     align-items: center;
     display: flex;
     /* justify-content: center; */
-
 }
 .register{
     display: flex;
     font-size:15px ;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+/* Ends Here */
 
