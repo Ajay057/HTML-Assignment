@@ -2,6 +2,7 @@ body{
     background-color: rgb(196, 0, 0);
 }
 
+/* Left Hand side images CSS */
 .circleImage img{
     position:relative;
     float: left;
@@ -20,6 +21,7 @@ body{
 }
 
 
+/* Right Hand side Form(div2) CSS */
 #div2{
 
     width: 50%;
