@@ -1,0 +1,20 @@
+.sidBar .Analysis p{
+    color: red;
+}
+
+.sidBar .Analysis{
+
+    background-color: #ffadad;
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
+.sidBar .dashboard p{
+    color: black;
+}
+
+.sidBar .dashboard{
+
+    background-color: #ffadad;
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
