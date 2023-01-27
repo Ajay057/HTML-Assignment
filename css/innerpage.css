@@ -3,18 +3,17 @@
 }
 
 .sidBar .Analysis{
-
+    width: 183px;
     background-color: #ffadad;
     background: #FFF3F4 0% 0% no-repeat padding-box;
     border-radius: 5px;
 }
 .sidBar .dashboard p{
     color: black;
+    text-decoration: none;
 }
-
-.sidBar .dashboard{
-
-    background-color: #ffadad;
-    background: #FFF3F4 0% 0% no-repeat padding-box;
+.sidBar .dashboard {
+    background-color: white;
+    /* background: #FFF3F4 0% 0% no-repeat padding-box; */
     border-radius: 5px;
 }

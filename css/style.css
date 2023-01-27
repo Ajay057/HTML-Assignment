@@ -209,7 +209,7 @@ body{
     height: 43px;
 }
 
-/* graphBar */
+/* graphBar Css*/
 .graphBar{
     margin-top: 25px;
 }
@@ -251,7 +251,7 @@ body{
     font-size: 25px;
 }
 
-/* last part css */
+/* Chart CSs starts here */
 .chart-detail{
     width: 745px;
     background-color: white;
@@ -313,7 +313,7 @@ body{
     left: 5px;
 }
 
-/* table css */
+/* table css starts here*/
 .invoice{
     margin-left: 40px;
 }
