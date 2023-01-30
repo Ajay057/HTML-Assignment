@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 
 <body>
@@ -25,13 +25,23 @@
                 <img src="images/notification-icon.svg" alt="" class="notificationIcon">
                 <img src="images/profile.png" alt="" class="profile">
                 <span class="name1">John Doe</span>
+
+                <!-- <div class="dropdown">
+                    <img src="images/downward-arrow.svg" alt="">
+                  <div class="dropdown-content">
+                    <span class="name1">John Doe</span>
+                    <img src="images/notification-icon.svg" alt="" class="notificationIcon">
+                  </div>
+                </div> -->
+
                 <img src="images/downward-arrow.svg" alt="" class="downwardArrow">
             </div>
         </nav>
         <!-- Navbar Ends Here -->
 
-        <!-- Aside or Sidebar Started here -->
+        <!-- Page Content Starts here -->
         <div class="mainContent container-fluid">
+            <!-- Sidebar html starts here -->
             <div class="row">
                 <div class="col-lg-2 sidBar">
                     <div class="dashboard"><img src="images/dashboard-active.svg" />
@@ -57,6 +67,7 @@
                     </div>
                 </div>
                 <div class="col-lg-10 graphBar">
+                    <!-- five stamps html -->
                     <span class="row heading">Dashboard</span>
                     <div class="container">
                         <div class="stamp">
@@ -99,7 +110,7 @@
                     </div>
 
                     <!--both data graph-->
-                    <div style="display: flex; ">
+                    <div class="DataGraph">
                         <div class="chart-detail">
                             <div class="label">
                                 <span>Sale</span>
@@ -133,7 +144,7 @@
                                         </div>
                                         <p>Russia</p>
                                     </div>
-                                    <div style="display: flex;margin: 0px 0px 0px 177px;">
+                                    <div style="display: flex;margin: 0px 0px 0px 30px;">
                                         <div
                                             style="background-color:#d7d756; height: 15px;width: 15px;border-radius: 100px;">
                                         </div>
@@ -150,9 +161,9 @@
                         </div>
                     </div> -->
 
-                    <!-- table -->
+                    <!-- table html starts here -->
                     <div class="invoice mt-5">
-                        <div class="table px-2 py-2 table-responsive">
+                        <div class="table py-2 table-responsive">
                             <div class="header d-flex justify-content-between bg-white">
                                 <span style="font-weight: 700;color: rgb(69, 67, 67); font-size: 22px;">Invoices</span>
                                 <span style="color: red; cursor: pointer; font-size: 12px;">View All</span>
@@ -254,7 +265,9 @@
                 </div>
             </div>
         </div>
+        <!-- Page Content Ends here -->
         <script src="js/bootstrap.bundle.min.js"></script>
+    
 </body>
 
 </html>

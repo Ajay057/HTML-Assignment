@@ -1,112 +1,64 @@
 body{
-    background-color: rgb(255, 203, 203)
+    background-color: #fafafa;
+    /* width: 1560px; */
+    /* height: 720px; */
 }
-
-/* Left Hand side images CSS : Starts Here*/
-.circleImage img{
-    position:relative;
-    float: left;
-    top: 72px;
-    left: 166px;
-    width: 576px;
-    height: 576px;
-}
-
-.circleImage img{
-    height: 576px;
-    width: 576px;
-    box-shadow: 0px 4px 31px #0000000a;
-    border: 20px solid #ffffff;;
-    border-radius: 2000px;
-}
-/* End's here */
-
-/* Right Hand side Form(div2) CSS: starts here*/
-#div2{
-
-    width: 50%;
-    float: right;
-    position: relative;
-    padding-left: 150px;
-}
-#div2 .logo img{
-    margin-top: 106px;
-    /* margin-left: 100px; */
-    width: 272px;
-    height: 58px;
-}
-#div2 .description{
-    font-size: 40px;
-    margin-top: 19.17px;
-    text-align: left;
-    /* font-family: 'Roboto', light; */
-    font-family: Roboto;
-    /* margin-left: 100px; */
-    /* margin-right: 500px; */
-}
-#div2 .login p{
-    font-size: 25px;
-    margin-top: 31.87px;
-    color: #474747;
-    font-family: 'Roboto', sans-serif;
-    /* margin-left: 100px; */
-}
-#div2 .color{
-    color: rgb(204, 0, 0);
-    font-family: 'Roboto', sans-serif;
-}
-#div2 .username, .password{
-    color: rebeccapurple;
-    width: 429px;
-    height: 49px;
-    /* margin-top: 27px; */
-    padding: 14.5px;
-    font-size: 15px;
-    border-radius: 3px;
-    border: 1px solid #ADADAD;
-}
-#div2 .password{
-    margin-top: 27px
-}
-
-#div2 .forgot p{
-    margin-top: 23px;
-}
-
-.logo img{
-    height: 58px;
-    margin-top: 106px;
-}
-.button{
-    margin-top: 30.5px;
-    margin-right: 180px;
+.MainPage{
+    margin-top: 72px;
     display: flex;
-    height: 45px;
-    justify-content: space-between;
-    width:px ;
-}
-.button input{
-    color: white;
-    background-color: #c22d2d;
-    width: 138px;
-    border-radius: 45px;
-    border: none;
-    /* cursor: pointer; */
-}
-.button span{
-    color: gray;
-    font-size: 15px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    cursor: pointer;
-    height: 45px;
+    justify-content: space-evenly;
     align-items: center;
-    display: flex;
-    /* justify-content: center; */
 }
-.register{
-    display: flex;
-    font-size:15px ;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.RoundedImage{
+    width: 576px;
+    height: 576px;
+}
+
+.RoundedImage img{
+    width: 556px;
+    height: 556px;
+    border-radius: 315px;
+    box-shadow: 0px 4px 31px #0000000a;
+    border: 20px solid #FFFFFF;
+    opacity: 1;
+}
+
+.SignInForm{
+        display: flex;
+        flex-direction: column;
+}
+.SignInForm img{
+        width: 272px;
+        height: 58px;
+}
+.SignInForm input{            
+        width: 429px;
+        height: 49px;
+        font-size: 15px;
+        margin-bottom: 27px;
+        border: 1px solid #ADADAD;
+        border-radius: 5px;
+        padding-left: 15px;
+}  
+.SignInForm .Button{
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        align-items: center;
+}
+.Button .ButtonLogin{
+        width: 138px;
+        height: 45px;
+        background: #C8242F 0% 0% no-repeat padding-box;
+        border-radius: 23px;
+        color: white;
+        font-size: 18px;
+        border: transparent;
+}
+.description{
+    width: 500px; 
+    height: 100px;
+    font-size: 40px;
 }
 /* Ends Here */
 
@@ -114,7 +66,7 @@ body{
 
 /* Dashboard Css */
 .main{
-    background-color: whitesmoke;   
+    background-color: #fafafa;   
 }
 .flexbox{
     display: flex;
@@ -170,9 +122,10 @@ body{
 /* sidebar Image */
 .sidBar{
     background-color: white;
-    width: 170px;
+    width: 212px;
     /* height: 675px; */
     height: auto;
+    /* margin-right: 50px; */
 }
 .sidBar img{
     height: 20px;
@@ -218,6 +171,10 @@ body{
     margin-top: 25px;
     margin-left: 48px;
 }
+.form .heading{
+    font-size: 30px;
+    /* margin-top: 25px; */
+}
 
 
 .stamp{
@@ -249,6 +206,11 @@ body{
 
 .stamp .number{
     font-size: 25px;
+}
+
+/* Datagraph css starts here */
+.DataGraph{
+    display: flex;
 }
 
 /* Chart CSs starts here */
@@ -306,6 +268,9 @@ body{
     margin:20px 75px 0px 75px;
     height: 200px;
 }
+.countries{
+    /* display: flex; */
+}
 .countries p{
     font-size: small;
     position: relative;
@@ -316,6 +281,7 @@ body{
 /* table css starts here*/
 .invoice{
     margin-left: 40px;
+    width: 1170px;
 }
 .invoice th{
     color: gray;
@@ -342,3 +308,421 @@ height: 26px;
 table .fontSmall{
     font-size: 15px;
 }
+
+
+/* innerpage css */
+.sidBar .Analysis p{
+    color: red;
+}
+
+.sidBar .Analysis{
+    width: 183px;
+    background-color: #ffadad;
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
+.sidBar .dashboard p{
+    color: black;
+    text-decoration: none;
+}
+.sidBar .dashboard {
+    background-color: white;
+    /* background: #FFF3F4 0% 0% no-repeat padding-box; */
+    border-radius: 5px;
+}
+
+
+
+
+form{margin-top:30px;}
+
+.form-group{position:relative;}
+.form-control{height: 40px;}
+.form-control:focus{box-shadow:none;}
+
+label{position:absolute; left:10px; top:10px; transition:all 0.3s; color:#999; font-weight:normal;}
+
+
+.form-control:focus ~ label{left:5px; top:-10px; background:#fff; padding:0 5px;}
+
+label.active{left:5px; top:-10px; background:#fff; padding:0 5px;}
+
+
+.snackBar img{
+    width: 25px;
+    margin: 7px;
+    height: 25px;
+}
+.snackBar .firstRow,.secondRow{
+    display: flex;
+    justify-content: space-between;
+}
+.snackBar .firstRow .left, .right{
+    margin: 10px;
+}
+.snackBar .secondRow .left, .right{
+    margin: 10px;
+}
+
+.form-control{
+    margin-top: 20px;
+}
+/* 
+style="border: 1px dashed #ADADAD; border-radius: 5px;"   add karvani chhe aa dashed line border
+*/
+.headings{
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.smallHeadings{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+.formMain{
+    width: 1157px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    margin-left: 79px;
+    margin-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.squareBox {
+    display: flex;
+    border: 1px solid;
+    width: 544px;
+    height: 44px;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+
+
+/* tab css */
+.tab1, .tab2, .tab3{
+    font-size: 15px;
+    margin-right: 36px;
+}
+.tab1{
+    color: red;
+}
+.singleLine{
+    border: 1px solid #ADADAD;
+    margin-top: 13px;
+    margin-bottom: 27px;
+}
+.lorem{
+    margin-bottom: 75px;
+}
+
+/* td {
+    padding: 10px;
+    background: linear-gradient(to right, red 33.33%, green 33.33%, green 66.67%, red 66.67%) no-repeat;
+    background-size: 100% 2px;
+    background-position: left bottom;
+  } */
+
+/* Css for Responsive MediaQuery */
+@media screen and (max-width: 1279px) {
+    /* Start: Index Page */
+    .MainPage{
+        flex-direction: column;
+    }
+    .SignInForm{
+        align-items: center;
+    }
+    .description p{
+        padding-left: 34px;
+        font-size: 40px;
+    }
+    .logo img{
+        margin-top: 40px;
+    }
+
+    /* Start: Dashboard Page */
+    .invoice{
+        width: auto;
+        margin-left: 0px;
+    }
+    .DataGraph{
+        flex-direction: column;
+        align-items: center;
+    }   
+    .invoice{     
+        width: auto;
+        margin-left: 0px;
+        margin: 30px;
+    }
+    .stamp{
+        flex-wrap: wrap;
+    }
+    
+    /* Inner page Mediaquery */
+    .snackBar .message{
+        font-size: 15px;
+    }
+    .mainContent{
+        flex-direction: column;
+    }
+    .formMain{
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px){
+    /* Start: Index Page */
+    .RoundedImage{
+        display: flex;
+        justify-content: center;
+        width: 0;
+        height: 345px;
+    }
+    .RoundedImage img{
+        width: 300px;
+        height: 300px;
+    }
+    .description{
+        width: 383px;
+        justify-content: center;
+        display: flex;
+    }
+    .description p{
+        font-size: 30px;
+        width: 386px;
+    }
+    .SignInForm input{
+        width: 300px;
+    }
+    .SignInForm .Button{
+        width: 300px;
+    }
+    /* Starts Dashboard MediaQuery */
+    .label span{
+        margin-left: 10px
+    }
+    .chart-detail img{
+        margin: 23px 10px 42px 12px;
+        height: 200px;
+    }
+    .piechart{
+        height: auto;
+        padding-bottom: 20px;
+        margin-left: 0px;
+        width: 335px;
+    }
+    .piechart img {
+        /* margin: 19px 69px 0px 69px; */
+        /* height: auto; */
+        width: auto;
+    }
+    .chart-detail{
+        width: auto;
+        height: auto;
+        margin-left: 0px;
+    }
+    .chart-detail img{
+        width: 270px;
+        margin: 0 23px 14px;
+        height: 155px;
+    }
+    .flexbox .item1 .menuBar {
+        margin-left: 10px;
+    }
+    .item1 .headerLogo {
+        margin-left: 10px;
+    }
+    .item1 .searchIcon{
+        margin-left: 9px;
+    }
+    .item1 .search{
+        display: none;
+    }
+    .item2 .notificationIcon {
+        display: none;
+    }
+    .item2 .name1{
+        display: none;
+    }
+    .item2 .downwardArrow {
+        margin: 0 9px 0 15px;
+    }
+    .stamp-detail{
+        width: 140px;
+        height: 88px;
+        margin: 3px;
+    }
+    .stamp-detail p {
+        font-size: 13px;
+    }
+    .stamp .number {
+        font-size: 20px;
+    }
+
+    /* Innerpage mediaquery */
+    .snackBar .firstRow, .secondRow {
+        flex-direction: column;
+        /* width: auto; */
+    }
+    .snackBar .left, .right{
+        width: auto;
+    }
+    .formMain{
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    /* Start: Index Page */
+    .RoundedImage{
+        display: flex;
+        justify-content: center;
+        width: 0;
+        height: 345px;
+    }
+    .RoundedImage img{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* dashboard css */
+    .label span{
+        margin-left: 10px
+    }
+    .chart-detail img{
+        margin: 23px 10px 42px 12px;
+        height: 200px;
+    }
+    .piechart{
+        height: auto;
+        padding-bottom: 20px;
+        margin-left: 0px;
+    }
+    .piechart img {
+        margin: 19px 69px 0px 69px;
+        height: auto;
+        width: auto;
+    }
+    .chart-detail{
+        width: auto;
+        height: auto;
+        margin-left: 0px;
+    }
+    .chart-detail img{
+        width: 381px;
+        margin: 0 23px 14px;
+    }
+    .flexbox .item1 .menuBar {
+        margin-left: 10px;
+    }
+    .item1 .headerLogo {
+        margin-left: 10px;
+    }
+    .item1 .searchIcon{
+        margin-left: 9px;
+    }
+    .item1 .search{
+        margin-left: 2px;
+    }
+    .item2 .notificationIcon {
+        margin-right: 15px;
+        margin-left: 20px;
+    }
+    .item2 .downwardArrow {
+        margin: 0 9px 0 15px;
+    }
+    .stamp-detail {
+        margin: 10px;
+        background-color: #ffffff;
+        width: 152px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+    }
+    .stamp-detail p {
+        font-size: 13px;
+    }
+    .stamp .number {
+        font-size: 20px;
+    }
+
+    /* innerpage mediaquery */
+    .snackBar .firstRow, .secondRow {
+        flex-direction: column;
+    }
+    .snackBar .left, .right{
+        width: auto;
+    }
+    .formMain{
+        margin-left: 0px;
+    }
+
+}
+@media screen and (min-width: 769px) and (max-width: 1279px){
+    .chart-detail{
+        width: auto;
+        height: auto;
+        margin-left: 0px;
+    }
+    .chart-detail img{
+        margin: 0 76px 32px;
+    }
+    .piechart{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .piechart img {
+        margin: 19px 69px 0px 69px;
+        height: auto;
+        width: auto;
+    }
+
+    /* innerpage mediaquery starts here */
+    /* .snackBar .message{
+        font-size: 15px;
+    }
+    .mainContent{
+        flex-direction: column;
+    }
+    .formMain{
+        width: auto;
+    } */
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1470px){
+    .invoice{     
+        width: auto;
+        margin-left: 0px;
+        margin: 30px;
+    }
+} 
+
+
+
+
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+} */

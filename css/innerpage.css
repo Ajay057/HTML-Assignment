@@ -17,3 +17,189 @@
     /* background: #FFF3F4 0% 0% no-repeat padding-box; */
     border-radius: 5px;
 }
+
+
+
+
+form{margin-top:30px;}
+
+.form-group{position:relative;}
+.form-control{height: 40px;}
+.form-control:focus{box-shadow:none;}
+
+label{position:absolute; left:10px; top:10px; transition:all 0.3s; color:#999; font-weight:normal;}
+
+
+.form-control:focus ~ label{left:5px; top:-10px; background:#fff; padding:0 5px;}
+
+label.active{left:5px; top:-10px; background:#fff; padding:0 5px;}
+
+
+.snackBar img{
+    width: 25px;
+    margin: 7px;
+    height: 25px;
+}
+.snackBar .firstRow .left, .right{
+    margin: 10px;
+}
+.snackBar .secondRow .left, .right{
+    margin: 10px;
+}
+
+.form-control{
+    margin-top: 20px;
+}
+/* 
+style="border: 1px dashed #ADADAD; border-radius: 5px;"   add karvani chhe aa dashed line border
+*/
+.headings{
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.smallHeadings{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+.formMain{
+    width: 1157px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    margin-left: 79px;
+
+}
+
+.squareBox {
+    display: flex;
+    border: 1px solid;
+    width: 544px;
+    height: 44px;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+
+
+/* tab css */
+.tab1, .tab2, .tab3{
+    font-size: 15px;
+    margin-right: 36px;
+}
+.tab1{
+    color: red;
+}
+.singleLine{
+    border: 1px solid #ADADAD;
+    margin-top: 13px;
+    margin-bottom: 27px;
+}
+.lorem{
+    margin-bottom: 75px;
+}
+
+td {
+    padding: 10px;
+    background: linear-gradient(to right, red 33.33%, green 33.33%, green 66.67%, red 66.67%) no-repeat;
+    background-size: 100% 2px;
+    background-position: left bottom;
+  }
+/* copy pasted */
+/* .tabs {
+    position: absolute;
+    top: 1712px;
+    left: 321px;
+    width: 39px;
+    height: 24px;
+    text-align: left;
+    font: normal normal bold 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+
+.tab1 {
+    position: absolute;
+    top: 1757px;
+    left: 337px;
+    width: 37px;
+    height: 20px;
+    text-align: left;
+    font: normal normal bold 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+    opacity: 1;
+}
+
+.line1 {
+    position: absolute;
+    top: 1791px;
+    left: 322px;
+    width: 1158px;
+    height: 0px;
+    border: 1px solid #ADADAD;
+    opacity: 1;
+}
+
+.line2 {
+    position: absolute;
+    top: 1791px;
+    left: 322px;
+    width: 69px;
+    height: 0px;
+    border: 3px solid #C8242F;
+    opacity: 1;
+}
+
+.tab2 {
+    position: absolute;
+    top: 1757px;
+    left: 410px;
+    width: 37px;
+    height: 20px;
+    text-align: left;
+    font: normal normal bold 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    opacity: 1;
+}
+
+.tab3 {
+    position: absolute;
+    top: 1757px;
+    left: 486px;
+    width: 37px;
+    height: 20px;
+    text-align: left;
+    font: normal normal bold 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    opacity: 1;
+}
+
+.lorem {
+    position: absolute;
+    top: 1817px;
+    left: 322px;
+    width: 1119px;
+    height: 68px;
+    text-align: left;
+    font: normal normal normal 15px/24px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+} */
+
+
+
+/* @media screen and (min-width: 481px) and (max-width: 768px){
+    .formMain{
+        margin-left: 0px;
+    }
+} */
