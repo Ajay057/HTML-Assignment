@@ -14,7 +14,7 @@
 <body>
     <div class="main">
 
-        <!-- Sidbar  -->
+        <!-- Togglebar html  -->
         <div id="mySidBar" class="SidBar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <div class="col-lg-2 sidBar">
@@ -43,13 +43,17 @@
         </div>
 
 
-        <!-- Navbar Started Here -->
+        <!-- Navbar html Started Here -->
         <nav class="flexbox">
             <div class="flex-item item1">
-                <button class="menuBar" onclick="openNav()" style="border: none; background: transparent;"><img src="images/menu-bar.svg" alt=""></button>
-                <img src="images/header-logo.svg" alt="" class="headerLogo">
+                <button class="menuBar" onclick="openNav()" style="border: none; background: transparent;"><img
+                        src="images/menu-bar.svg" alt=""></button>
+                <img src="images/header-logo.svg" alt="" class="headerLogo coName">
                 <img src="images/search-icon.svg" alt="" class="searchIcon">
-                <span class="search">Search</span>
+                <div class="input-group search">
+                    <input type="search" class="" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" style="border: none;" />
+                </div>
             </div>
             <div class="flex-item item2">
                 <img src="images/notification-icon.svg" alt="" class="notificationIcon">
@@ -63,236 +67,229 @@
         <!-- Aside or Sidebar Started here -->
         <div class="mainContent container-fluid" style="display: flex;">
             <!-- <div class="" style="display: flex;"> -->
-                <div class=" sidBar">
-                    <div class="dashboard"><img src="images/dashboard-default.svg" />
-                        <p>Dashboard</p>
+            <div class=" sidBar">
+                <div class="dashboard"><img src="images/dashboard-default.svg" />
+                    <p>Dashboard</p>
+                </div>
+                <div class="Analysis"><img src="images/graph-active.svg" />
+                    <p style="color: red;">Analysis</p>
+                </div>
+                <div class="Inbox"><img src="images/inbox-default.svg" />
+                    <p>Inbox</p>
+                </div>
+                <div class="History"><img src="images/clock-default.svg" />
+                    <p>History</p>
+                </div>
+                <div class="Users"><img src="images/user-default.svg" />
+                    <p>Users</p>
+                </div>
+                <div class="Maintenance"><img src="images/maintenance-default.svg" />
+                    <p>Maintenance</p>
+                </div>
+                <div class="Setting"><img src="images/setting-default.svg" />
+                    <p>Setting</p>
+                </div>
+            </div>
+            <!-- form html starts -->
+            <div class="form formMain" style="background-color: white;">
+                <span class="row heading">Analysis</span>
+                <span class="headings">One Column</span>
+                <div class="oneColumn d-flex" style="flex-direction: column;">
+                    <div class="form-group floating-label form-ripple">
+                        <div class="form-group">
+                            <input type="name" class="form-control" id="name1" autocomplete="off">
+                            <label for="name1">Name</label>
+                        </div>
                     </div>
-                    <div class="Analysis"><img src="images/graph-active.svg" />
-                        <p style="color: red;">Analysis</p>
+                    <select class="form-control dropdown">
+                        <option>Dropdown</option>
+                    </select>
+                    <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Multiple line"
+                        style="height: 130px;"></textarea>
+                </div>
+                <span class="headings">Two Column</span>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group floating-label form-ripple">
+                            <div class="form-group">
+                                <input type="name" class="form-control" id="name" autocomplete="off">
+                                <label for="name">Name</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="Inbox"><img src="images/inbox-default.svg" />
-                        <p>Inbox</p>
-                    </div>
-                    <div class="History"><img src="images/clock-default.svg" />
-                        <p>History</p>
-                    </div>
-                    <div class="Users"><img src="images/user-default.svg" />
-                        <p>Users</p>
-                    </div>
-                    <div class="Maintenance"><img src="images/maintenance-default.svg" />
-                        <p>Maintenance</p>
-                    </div>
-                    <div class="Setting"><img src="images/setting-default.svg" />
-                        <p>Setting</p>
+                    <div class="col">
+                        <div class="form-group floating-label form-ripple">
+                            <div class="form-group">
+                                <input type="username" class="form-control" id="username" autocomplete="off">
+                                <label for="username">Username</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="form formMain" style="background-color: white;">
-                    <span class="row heading">Analysis</span>
-                    <span class="headings">One Column</span>
-                    <div class="oneColumn d-flex" style="flex-direction: column;">
-                        <input type="text" class="form-control" placeholder="Name">
-                        <select class="form-control dropdown">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group floating-label form-ripple">
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password" autocomplete="off">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <select class="form-control">
                             <option>Dropdown</option>
-                            <!-- <option>Dropdown</option> -->
-                            <!-- <option>Dropdown</option> -->
                         </select>
-                        <!-- <input type="dropdown "> -->
-                        <!-- <select name="form-control Dropdown" class="" id="">
-                            <option value="DropDown">Dropdown</option>
-                        </select> -->
-                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Multiple line"
-                            style="height: 130px;"></textarea>
                     </div>
-                    <span class="headings">Two Column</span>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group floating-label form-ripple">
-                                <div class="form-group">
-                                    <input type="name" class="form-control" id="name" autocomplete="off">
-                                    <label for="name">Name</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group floating-label form-ripple">
-                                <div class="form-group">
-                                    <input type="username" class="form-control" id="username" autocomplete="off">
-                                    <label for="username">Username</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group floating-label form-ripple">
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="password" autocomplete="off">
-                                    <label for="password">Password</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <select class="form-control">
-                                <option>Dropdown</option>
-                            </select>
-                        </div>
-                    </div>
-                    <span class="headings">Three Column</span>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="form-group floating-label form-ripple">
-                                <div class="form-group">
-                                    <input type="name" class="form-control is-invalid" id="name" autocomplete="off">
-                                    <label for="name">Focus</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group floating-label form-ripple">
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="password" autocomplete="off">
-                                    <label for="password">Password</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group floating-label form-ripple">
-                                <div class="form-group">
-                                    <input type="disabled" class="form-control" id="disabled" autocomplete="off" style="border: 1px dashed #ADADAD;">
-                                    <label for="disabled">Disabled</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="headings">Four Column</span>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <label for="validationTextarea" class="form-label"></label>
-                            <input type="text" class="form-control is-invalid" id="validationTextarea"
-                                placeholder="UI Designer" required></input>
-                            <div class="invalid-feedback">
-                                Enter Valid data
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <!-- <label for="validationTextarea" class="form-label">Textarea</label> -->
-                            <input class="form-control" id="validationTextarea" placeholder="Name"
-                                required></input>
-                            <div class="">
-                                Enter your full Name as per ID
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group floating-label form-ripple">
-                                <div class="form-group">
-                                    <input type="username" class="form-control" id="username" autocomplete="off">
-                                    <label for="username">Username</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <select class="form-control">
-                                <option>Select</option>
-                            </select>
-                        </div>
-                    </div>
-                    <span class="headings">Other Design Elements</span>
-                    <div class="smallHeadings">File Upload</div>
-                    <!-- <label class="form-label" for="customFile">Default file input example</label> -->
-                    <!-- <input type="file" class="form-control" id="customFile" /> -->
-                    <div class="callTOAction d-flex" style="align-items: center;">
-                        <button type="button" class="btn btn-outline-danger rounded-pill" style="width: 124px;">
-                            <!-- <img src="images/cloud-upload-icon.svg" alt=""> Upload</button> -->
-                            <img src="images/cloud-upload-icon.svg" alt=""> Upload</button>
-                        <!-- <button type="button" class="btn btn-outline-danger rounded-pill">Secondary</button> -->
-                        <span class="mx-3" style="color: gray;">No item selected</span>
-                    </div>
-
-                    <div class="smallHeadings">Radio Button</div>
-                    <div class="radioButton ">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1" />
-                            <span>Option 1</span>
-                            <!-- <label class="form-check-label" for="inlineRadio1"></label> -->
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2" style="background-color: red;border: red;" checked />
-                            <span>Option2</span>
-                            <!-- <label class="form-check-label" for="inlineRadio2">2</label> -->
-                        </div>
-                    </div>
-
-                    <div class="smallHeadings">Checkbox</div>
-                    <div class="checkBox">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                            <span>Option1</span>
-                            <!-- <label class="form-check-label" for="inlineCheckbox1">1</label> -->
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"
-                                style="background-color: red;border: red;" checked />
-                            <span>Option2</span>
-                            <!-- <label class="form-check-label" for="inlineCheckbox2">2</label> -->
-                        </div>
-                    </div>
-
-                    <div class="smallHeadings">Snackbar</div>
-                    <div class="snackBar" >
-                        <div class="firstRow">
-                            <div class="left squareBox border-danger text-danger">
-                                <img src="images/error-icon.svg" alt=""><span class="message text-error">This is an
-                                    error message!</span>
-                            </div>
-                            <div class="right squareBox border-primary text-primary">
-                                <img src="images/info-icon.svg" alt=""><span class="message">This is an information
-                                    message!</span>
-                            </div>
-                        </div>
-                        <div class="secondRow">
-                            <div class="left squareBox border-warning text-warning">
-                                <img src="images/warning-icon.svg" alt=""><span class="message">This is a warning
-                                    message!</span>
-                            </div>
-                            <div class="right squareBox border-success text-success">
-                                <img src="images/success-icon.svg" alt=""><span class="message">This is a Success
-                                    message!</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="smallHeadings">Call to action</div>
-                    <div class="callTOAction d-flex">
-                        <button type="button" class="btn btn-danger rounded-pill" style="margin-right: 15px; width: 124px;">Primary</button>            
-                        <button type="button" class="btn btn-outline-danger rounded-pill" style="width: 145px;">Secondary</button>                    
-                    </div>
-
-                    <div class="smallHeadings">Tabs</div>
-
-                    <div class="d-flex" style="justify-content: start; margin-left: 10px;">
-                        <u class="tab1">Tab 1</u>
-                        <u class="tab2" style="text-decoration: none;">Tab 2</u>
-                        <u class="tab3" style="text-decoration: none;">Tab 3</u>
-                    </div>
-                        <u class="singleLine"></u>
-                    <div class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has
-                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley of type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the leap
-                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                        with the
-                        release of Letraset sheets containing</div>
-
                 </div>
-                <script src="js/bootstrap.bundle.min.js"></script>
-                <script src="js/jquery.min.js"></script>
-                <script src="js/custom.js"></script>
+                <span class="headings">Three Column</span>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group floating-label form-ripple">
+                            <div class="form-group">
+                                <input type="name" class="form-control is-invalid" id="name" autocomplete="off">
+                                <label for="name">Focus</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group floating-label form-ripple">
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password1" autocomplete="off">
+                                <label for="password1">Password</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group floating-label form-ripple">
+                            <div class="form-group">
+                                <input type="disabled" class="form-control" id="disabled1" autocomplete="off"
+                                    style="border: 1px dashed #ADADAD;">
+                                <label for="disabled1">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="headings">Four Column</span>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="validationTextarea" class="form-label"></label>
+                        <input type="text" class="form-control is-invalid" id="validationTextarea"
+                            placeholder="UI Designer" required></input>
+                        <div class="invalid-feedback">
+                            Enter Valid data
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <input class="form-control" id="validationTextarea" placeholder="Name" required></input>
+                        <div class="">
+                            Enter your full Name as per ID
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group floating-label form-ripple">
+                            <div class="form-group">
+                                <input type="username" class="form-control" id="username1" autocomplete="off">
+                                <label for="username1">Username</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-control">
+                            <option>Select</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="headings">Other Design Elements</span>
+                <div class="smallHeadings">File Upload</div>
+                <div class="callTOAction d-flex" style="align-items: center;">
+                    <button type="button" class="btn btn-outline-danger rounded-pill" style="width: 124px;">
+                        <img src="images/cloud-upload-icon.svg" alt=""> Upload</button>
+                    <span class="mx-3" style="color: gray;">No item selected</span>
+                </div>
+
+                <div class="smallHeadings">Radio Button</div>
+                <div class="radioButton ">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1" />
+                        <span>Option 1</span>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2" style="background-color: red;border: red;" checked />
+                        <span>Option2</span>
+                    </div>
+                </div>
+
+                <div class="smallHeadings">Checkbox</div>
+                <div class="checkBox">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                        <span>Option1</span>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"
+                            style="background-color: red;border: red;" checked />
+                        <span>Option2</span>
+                    </div>
+                </div>
+
+                <div class="smallHeadings">Snackbar</div>
+                <div class="snackBar">
+                    <div class="firstRow">
+                        <div class="left squareBox border-danger text-danger">
+                            <img src="images/error-icon.svg" alt=""><span class="message text-error">This is an
+                                error message!</span>
+                        </div>
+                        <div class="right squareBox border-primary text-primary">
+                            <img src="images/info-icon.svg" alt=""><span class="message">This is an information
+                                message!</span>
+                        </div>
+                    </div>
+                    <div class="secondRow">
+                        <div class="left squareBox border-warning text-warning">
+                            <img src="images/warning-icon.svg" alt=""><span class="message">This is a warning
+                                message!</span>
+                        </div>
+                        <div class="right squareBox border-success text-success">
+                            <img src="images/success-icon.svg" alt=""><span class="message">This is a Success
+                                message!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="smallHeadings">Call to action</div>
+                <div class="callTOAction d-flex">
+                    <button type="button" class="btn btn-danger rounded-pill"
+                        style="margin-right: 15px; width: 124px;">Primary</button>
+                    <button type="button" class="btn btn-outline-danger rounded-pill"
+                        style="width: 145px;">Secondary</button>
+                </div>
+
+                <div class="smallHeadings">Tabs</div>
+
+                <div class="d-flex" style="justify-content: start; margin-left: 10px;">
+                    <u class="tab1">Tab 1</u>
+                    <u class="tab2" style="text-decoration: none;">Tab 2</u>
+                    <u class="tab3" style="text-decoration: none;">Tab 3</u>
+                </div>
+                <u class="singleLine"></u>
+                <div class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                    the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the
+                    release of Letraset sheets containing</div>
+
+            </div>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/custom.js"></script>
 
 
 </body>

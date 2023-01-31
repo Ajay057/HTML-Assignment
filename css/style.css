@@ -1,20 +1,20 @@
-body{
+body {
     background-color: #fafafa;
-    /* width: 1560px; */
-    /* height: 720px; */
 }
-.MainPage{
+/* index page css start */
+.MainPage {
     margin-top: 72px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.RoundedImage{
+
+.RoundedImage {
     width: 576px;
     height: 576px;
 }
 
-.RoundedImage img{
+.RoundedImage img {
     width: 556px;
     height: 556px;
     border-radius: 315px;
@@ -23,40 +23,49 @@ body{
     opacity: 1;
 }
 
-.SignInForm{
-        display: flex;
-        flex-direction: column;
+.SignInForm {
+    display: flex;
+    flex-direction: column;
 }
-.SignInForm img{
-        width: 272px;
-        height: 58px;
+
+.SignInForm img {
+    width: 272px;
+    height: 58px;
 }
-.SignInForm input{            
-        width: 429px;
-        height: 49px;
-        font-size: 15px;
-        margin-bottom: 27px;
-        border: 1px solid #ADADAD;
-        border-radius: 5px;
-        padding-left: 15px;
-}  
-.SignInForm .Button{
-        display: flex;
-        justify-content: space-between;
-        width: 450px;
-        align-items: center;
+
+.SignInForm input {
+    width: 429px;
+    height: 35px;
+    font-size: 15px;
+    margin-bottom: 27px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 15px;
 }
-.Button .ButtonLogin{
-        width: 138px;
-        height: 45px;
-        background: #C8242F 0% 0% no-repeat padding-box;
-        border-radius: 23px;
-        color: white;
-        font-size: 18px;
-        border: transparent;
+
+.SignInForm .Button {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    align-items: center;
 }
-.description{
-    width: 500px; 
+
+.SignInForm .login {
+    margin-top: 32px;
+}
+
+.Button .ButtonLogin {
+    width: 138px;
+    height: 45px;
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    color: white;
+    font-size: 18px;
+    border: transparent;
+}
+
+.description {
+    width: 500px;
     height: 100px;
     font-size: 40px;
 }
@@ -65,46 +74,55 @@ body{
 
 
 /* Dashboard Css */
-.main{
-    background-color: #fafafa;   
+.main {
+    background-color: #fafafa;
 }
-.flexbox{
+
+.flexbox {
     display: flex;
     height: 80px;
     background-color: white;
     justify-content: space-between;
     align-items: center;
 }
-.flexbox .item2, .item1{
+
+.flexbox .item2,
+.item1 {
     display: flex;
     flex-direction: row;
 }
 
-.flexbox .item1 .menuBar{
+.flexbox .item1 .menuBar {
     margin-left: 29px;
 }
-.item1 .headerLogo{
+
+.item1 .headerLogo {
     margin-left: 25px;
 }
-.item1 .searchIcon{
+
+.item1 .searchIcon {
     margin-left: 77px;
     width: 16px;
     height: 32px;
 }
-.item1 .search{
+
+.item1 .search {
     font-size: 16px;
     margin-left: 15px;
     display: flex;
     align-items: center;
 }
-.item2 .notificationIcon{
+
+.item2 .notificationIcon {
     margin-right: 52px;
     width: 22px;
 }
-.item2 .profile{
-    margin-right:12px;
+
+.item2 .profile {
+    margin-right: 12px;
 }
-.item2 .name1{
+
+.item2 .name1 {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -114,46 +132,55 @@ body{
     color: #000000;
     opacity: 1;
 }
-.item2 .downwardArrow{
-    /* width: 10px; */
+
+.item2 .downwardArrow {
     margin: 0 43px 0 15px;
 }
 
-/* sidebar Image */
-.sidBar{
+
+.sidBar {
     background-color: white;
     width: 212px;
-    /* height: 675px; */
     height: auto;
-    /* margin-right: 50px; */
 }
-.sidBar img{
+
+.sidBar img {
     height: 20px;
     padding-top: 2px;
 }
-.sidBar div{
+
+.sidBar div {
     margin: 10px 30px;
     width: 130px;
     font-size: small;
 }
-.sidBar div p{
+
+.sidBar div p {
     display: inline;
     font-size: 16px;
     margin-block-end: 0%;
     margin-left: 12px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.sidBar .dashboard p{
+
+.sidBar .dashboard p {
     color: red;
 }
 
-.sidBar .dashboard{
+.sidBar .dashboard {
 
     background-color: #ffadad;
     background: #FFF3F4 0% 0% no-repeat padding-box;
     border-radius: 5px;
 }
-.sidBar .dashboard, .Inbox,.Analysis,.History,.Users,.Maintenance,.Setting{
+
+.sidBar .dashboard,
+.Inbox,
+.Analysis,
+.History,
+.Users,
+.Maintenance,
+.Setting {
     padding-left: 17px;
     display: flex;
     align-items: center;
@@ -162,29 +189,28 @@ body{
     height: 43px;
 }
 
-/* graphBar Css*/
-.graphBar{
+.graphBar {
     margin-top: 25px;
 }
-.graphBar .heading{
+
+.graphBar .heading {
     font-size: 30px;
     margin-top: 25px;
     margin-left: 48px;
 }
-.form .heading{
+
+.form .heading {
     font-size: 30px;
-    /* margin-top: 25px; */
 }
 
 
-.stamp{
+.stamp {
     display: flex;
     justify-content: space-evenly;
     margin-top: 23px;
-    /* margin-left: 120px; */
-    /* width: 1060px; */
 }
-.stamp-detail{
+
+.stamp-detail {
     background-color: white;
     display: flex;
     width: 219px;
@@ -193,85 +219,90 @@ body{
     align-items: center;
     height: 116px;
 }
-.stamp-detail img{
-    /* padding:10px; */
+
+.stamp-detail img {
     height: 33px;
     width: 33px;
     margin-right: 19px;
 }
-.stamp-detail p{
+
+.stamp-detail p {
     margin-block: 0%;
     font-size: 15px;
 }
 
-.stamp .number{
+.stamp .number {
     font-size: 25px;
 }
 
-/* Datagraph css starts here */
-.DataGraph{
+.DataGraph {
     display: flex;
 }
 
 /* Chart CSs starts here */
-.chart-detail{
+.chart-detail {
     width: 745px;
     background-color: white;
     height: 300px;
     margin-top: 30px;
     margin-left: 45px;
-    /* width: 802px; */
     height: 345px;
 }
-.chart-detail img{
+
+.chart-detail img {
     margin: 30px 0px 49px 85px;
     height: 200px;
 }
-.label{
+
+.label {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.label span{
+
+.label span {
     padding: 10px;
     margin-left: 73px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.label u{
+
+.label u {
     display: inline;
     margin: 10px;
     font-size: x-small;
 }
-.monthly,.weekly{
+
+.monthly,
+.weekly {
     color: gray;
-    text-decoration-color:white;
+    text-decoration-color: white;
 }
-.yearly-active{
+
+.yearly-active {
     text-underline-offset: 10px;
     color: red;
 }
-.piechart{
+
+.piechart {
     background-color: white;
-    /* width: 350px; */
-    /* height: 300px; */
     margin-left: 30px;
     margin-top: 30px;
     width: 385px;
     height: 345px;
 }
-.piechart span{
+
+.piechart span {
     position: relative;
     top: 15px;
     left: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.piechart img{
-    margin:20px 75px 0px 75px;
+
+.piechart img {
+    margin: 20px 75px 0px 75px;
     height: 200px;
 }
-.countries{
-    /* display: flex; */
-}
-.countries p{
+
+.countries p {
     font-size: small;
     position: relative;
     bottom: 5px;
@@ -279,114 +310,139 @@ body{
 }
 
 /* table css starts here*/
-.invoice{
+.invoice {
     margin-left: 40px;
     width: 1170px;
 }
-.invoice th{
+
+.invoice th {
     color: gray;
 }
-.header span{
+
+.header span {
     padding: 10px;
 }
-.text-success{
+
+.text-success {
     background-color: #EBFFEF;
     width: 50px;
     height: 26px;
 }
-.text-danger{
+
+.text-danger {
     background-color: #FFF5F5;
     width: 60px;
     height: 26px;
 }
-.text-secondary{
+
+.text-secondary {
     background-color: #F8F8F8;
     width: 75px;
-height: 26px;
+    height: 26px;
 }
 
-table .fontSmall{
+table .fontSmall {
     font-size: 15px;
 }
+/* dashboard css ends */
 
-
-/* innerpage css */
-
-.sidBar .Analysis{
+/* innerpage css starts*/
+.sidBar .Analysis {
     width: 183px;
     background-color: #ffadad;
     background: #FFF3F4 0% 0% no-repeat padding-box;
     border-radius: 5px;
 }
-.sidBar .dashboard p{
+
+.sidBar .dashboard p {
     color: black;
     text-decoration: none;
 }
+
 .sidBar .dashboard {
     background-color: white;
-    /* background: #FFF3F4 0% 0% no-repeat padding-box; */
     border-radius: 5px;
 }
 
+form {
+    margin-top: 30px;
+}
 
-/* .redCol{
-    color: red;
-    font-size: 100px;
-} */
+.form-group {
+    position: relative;
+}
 
-form{margin-top:30px;}
+.form-control {
+    height: 40px;
+}
 
-.form-group{position:relative;}
-.form-control{height: 40px;}
-.form-control:focus{box-shadow:none;}
+.form-control:focus {
+    box-shadow: none;
+}
 
-label{position:absolute; left:10px; top:10px; transition:all 0.3s; color:#999; font-weight:normal;}
+label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: all 0.3s;
+    color: #999;
+    font-weight: normal;
+}
 
+.form-control:focus~label {
+    left: 5px;
+    top: -10px;
+    background: #fff;
+    padding: 0 5px;
+}
 
-.form-control:focus ~ label{left:5px; top:-10px; background:#fff; padding:0 5px;}
+label.active {
+    left: 5px;
+    top: -10px;
+    background: #fff;
+    padding: 0 5px;
+}
 
-label.active{left:5px; top:-10px; background:#fff; padding:0 5px;}
-
-
-.snackBar img{
+.snackBar img {
     width: 25px;
     margin: 7px;
     height: 25px;
 }
-.snackBar .firstRow,.secondRow{
+
+.snackBar .firstRow,
+.secondRow {
     display: flex;
     justify-content: space-between;
 }
-.snackBar .firstRow .left, .right{
-    margin: 10px;
-}
-.snackBar .secondRow .left, .right{
+
+.snackBar .firstRow .left,
+.right {
     margin: 10px;
 }
 
-.form-control{
+.snackBar .secondRow .left,
+.right {
+    margin: 10px;
+}
+
+.form-control {
     margin-top: 20px;
 }
-/* 
-style="border: 1px dashed #ADADAD; border-radius: 5px;"   add karvani chhe aa dashed line border
-*/
-.headings{
+
+.headings {
     margin-top: 30px;
     font-size: 22px;
 }
 
-.smallHeadings{
+.smallHeadings {
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 15px;
 }
 
-
-.formMain{
-    width: 1157px;
+.formMain {
+    width: 1120px;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     margin-left: 59px;
     flex-direction: column;
     margin-top: 25px;
@@ -404,288 +460,331 @@ style="border: 1px dashed #ADADAD; border-radius: 5px;"   add karvani chhe aa da
     margin-bottom: 12px;
 }
 
-
-
 /* tab css */
-.tab1, .tab2, .tab3{
+.tab1,
+.tab2,
+.tab3 {
     font-size: 15px;
     margin-right: 36px;
 }
-.tab1{
+
+.tab1 {
     color: red;
     z-index: 1;
     text-underline-offset: 17px;
     text-decoration-thickness: 3px;
 }
-.singleLine{
+
+.singleLine {
     border: 1px solid #ADADAD;
     margin-top: 13px;
     margin-bottom: 27px;
 }
-.lorem{
+
+.lorem {
     margin-bottom: 75px;
 }
 
-/* td {
-    padding: 10px;
-    background: linear-gradient(to right, red 33.33%, green 33.33%, green 66.67%, red 66.67%) no-repeat;
-    background-size: 100% 2px;
-    background-position: left bottom;
-  } */
+
 
 /* Css for Responsive MediaQuery */
 @media screen and (max-width: 1279px) {
+
     /* Start: Index Page */
-    .MainPage{
+    .MainPage {
         flex-direction: column;
     }
-    .SignInForm{
+
+    .SignInForm {
         align-items: center;
     }
-    .description p{
+
+    .description p {
         padding-left: 34px;
         font-size: 40px;
     }
-    .logo img{
+
+    .logo img {
         margin-top: 40px;
     }
 
     /* Start: Dashboard Page */
-    .invoice{
+    .invoice {
         width: auto;
         margin-left: 0px;
     }
-    .DataGraph{
+
+    .DataGraph {
         flex-direction: column;
         align-items: center;
-    }   
-    .invoice{     
+    }
+
+    .invoice {
         width: auto;
         margin-left: 0px;
         margin: 30px;
     }
-    .stamp{
+
+    .stamp {
         flex-wrap: wrap;
     }
-    
+
     /* Inner page Mediaquery */
-    .snackBar .message{
+    .snackBar .message {
         font-size: 15px;
     }
-    .mainContent{
+
+    .mainContent {
         flex-direction: column;
     }
-    .formMain{
+
+    .formMain {
         width: auto;
     }
 
     /* toggle */
-    .mainContent .sidBar{
+    .mainContent .sidBar {
         display: none;
     }
-    .main #mySidBar{
+
+    .main #mySidBar {
         margin-top: 80px;
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 480px){
+@media screen and (min-width: 0px) and (max-width: 480px) {
+
     /* Start: Index Page */
-    .RoundedImage{
+    .MainPage {
+        margin-top: 10px;
+    }
+
+    .RoundedImage {
         display: flex;
         justify-content: center;
         width: 0;
-        height: 345px;
+        height: 285px;
     }
-    .RoundedImage img{
-        width: 300px;
-        height: 300px;
+
+    .logo img {
+        margin-top: 12px;
+        width: 200px;
     }
-    .description{
+
+    .RoundedImage img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .description {
         width: 383px;
         justify-content: center;
         display: flex;
     }
-    .description p{
-        font-size: 30px;
-        width: 386px;
+
+    .description p {
+        font-size: 20px;
+        width: 185px;
+        margin: 0px;
     }
-    .SignInForm input{
+
+    .SignInForm input {
+        width: 250px;
+    }
+
+    .SignInForm .Button {
         width: 300px;
+        flex-direction: column;
     }
-    .SignInForm .Button{
-        width: 300px;
+
+    .SignInForm .login {
+        margin-top: 0px;
     }
-    .MainPage {
-        margin-top: 10px;
+
+    .Button .ButtonLogin {
+        margin-bottom: 10px;
     }
+
     /* Starts Dashboard MediaQuery */
-    .label span{
+    .label span {
         margin-left: 10px
     }
-    .chart-detail img{
+
+    .chart-detail img {
         margin: 23px 10px 42px 12px;
         height: 200px;
     }
-    .piechart{
+
+    .piechart {
         height: auto;
         padding-bottom: 20px;
         margin-left: 0px;
         width: 335px;
     }
+
     .piechart img {
-        /* margin: 19px 69px 0px 69px; */
-        /* height: auto; */
-        width: auto;
+        width: 185px;
     }
-    .chart-detail{
+
+    .chart-detail {
         width: auto;
         height: auto;
         margin-left: 0px;
     }
-    .chart-detail img{
+
+    .chart-detail img {
         width: 270px;
         margin: 0 23px 14px;
         height: 155px;
     }
+
     .flexbox .item1 .menuBar {
         margin-left: 10px;
     }
+
     .item1 .headerLogo {
         margin-left: 10px;
+        width: 101px;
     }
-    .item1 .searchIcon{
+
+    .item1 .searchIcon {
         margin-left: 9px;
-    }
-    .item1 .search{
         display: none;
     }
-    /* .item2 .notificationIcon {
+
+    .item1 .search {
         display: none;
-    } */
+    }
+
     .item2 .notificationIcon {
-        margin-right: 10px;
+        display: none;
     }
+
     .item2 .profile {
         margin-right: 0px;
     }
-    .item2 .profile:hover{
+
+    .item2 .profile:hover {
         color: red;
     }
-    .item2 .name1{
-        font-size: 10px;
+
+    .item2 .name1 {
+        display: none;
     }
+
     .item2 .downwardArrow {
         margin: 0 9px 0 15px;
     }
-    .stamp-detail{
+
+    .stamp-detail {
         width: 140px;
         height: 88px;
         margin: 3px;
     }
+
     .stamp-detail p {
         font-size: 13px;
     }
+
     .stamp .number {
         font-size: 20px;
     }
 
+    .login {
+        margin-top: 0px;
+    }
+
 
     /* Innerpage mediaquery */
-    .snackBar .firstRow, .secondRow {
+    .snackBar .firstRow,
+    .secondRow {
         flex-direction: column;
-        /* width: auto; */
     }
-    .snackBar .left, .right{
+
+    .snackBar .left,
+    .right {
         width: auto;
     }
-    .formMain{
+
+    .formMain {
         margin-left: 0px;
     }
 
-
-    /* dropdown1 css */
-    /* .dropDown1 {
-        position: relative;
-        display: inline-block;
-      }
-      .dropDown1-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 12px 16px;
-        z-index: 1;
-      }
-      .dropDown1:hover .dropDown1-content {
-        display: block;
-      }
-
-      .downwardArrow{
-        display: none;
-      } */
-
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
     /* Start: Index Page */
-    .RoundedImage{
+    .RoundedImage {
         display: flex;
         justify-content: center;
         width: 0;
         height: 345px;
     }
-    .RoundedImage img{
+
+    .RoundedImage img {
         width: 300px;
         height: 300px;
     }
 
     /* dashboard css */
-    .label span{
+    .label span {
         margin-left: 10px
     }
-    .chart-detail img{
+
+    .chart-detail img {
         margin: 23px 10px 42px 12px;
         height: 200px;
     }
-    .piechart{
+
+    .piechart {
         height: auto;
         padding-bottom: 20px;
         margin-left: 0px;
     }
+
     .piechart img {
         margin: 19px 69px 0px 69px;
         height: auto;
         width: auto;
     }
-    .chart-detail{
+
+    .chart-detail {
         width: auto;
         height: auto;
         margin-left: 0px;
     }
-    .chart-detail img{
+
+    .chart-detail img {
         width: 381px;
         margin: 0 23px 14px;
     }
+
     .flexbox .item1 .menuBar {
         margin-left: 10px;
     }
+
     .item1 .headerLogo {
         margin-left: 10px;
     }
-    .item1 .searchIcon{
+
+    .item1 .searchIcon {
         margin-left: 9px;
     }
-    .item1 .search{
+
+    .item1 .search {
         margin-left: 2px;
     }
+
     .item2 .notificationIcon {
         margin-right: 15px;
         margin-left: 20px;
     }
+
     .item2 .downwardArrow {
         margin: 0 9px 0 15px;
     }
+
     .stamp-detail {
         margin: 10px;
         background-color: #ffffff;
@@ -695,43 +794,48 @@ style="border: 1px dashed #ADADAD; border-radius: 5px;"   add karvani chhe aa da
         align-items: center;
         height: 70px;
     }
+
     .stamp-detail p {
         font-size: 13px;
     }
+
     .stamp .number {
         font-size: 20px;
     }
 
     /* innerpage mediaquery */
-    .snackBar .firstRow, .secondRow {
+    .snackBar .firstRow,
+    .secondRow {
         flex-direction: column;
     }
-    .snackBar .left, .right{
+
+    .snackBar .left,
+    .right {
         width: auto;
     }
-    .formMain{
+
+    .formMain {
         margin-left: 0px;
     }
 
-    /* dropdown 1 */
-    /* .dropDown1{
-        display: none;
-    } */
-
 }
-@media screen and (min-width: 769px) and (max-width: 1279px){
-    .chart-detail{
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .chart-detail {
         width: auto;
         height: auto;
         margin-left: 0px;
     }
-    .chart-detail img{
+
+    .chart-detail img {
         margin: 0 76px 32px;
     }
-    .piechart{
+
+    .piechart {
         height: auto;
         padding-bottom: 20px;
     }
+
     .piechart img {
         margin: 19px 69px 0px 69px;
         height: auto;
@@ -739,121 +843,82 @@ style="border: 1px dashed #ADADAD; border-radius: 5px;"   add karvani chhe aa da
     }
 
 
-    .formMain{
+    .formMain {
         padding-left: 0px;
     }
-    .mainContent .rowMain{
+
+    .mainContent .rowMain {
         justify-content: center;
     }
-    /* innerpage mediaquery starts here */
-    /* .snackBar .message{
-        font-size: 15px;
-    }
-    .mainContent{
-        flex-direction: column;
-    }
-    .formMain{
-        width: auto;
-    } */
-    /* .dropDown1{
-        display: none;
-    } */
-
-
-    /* toggle */
-    /* .mainContent .sidBar{
-        display: none;
-    }
-    .main #mySidBar{
-        margin-top: 80px;
-    } */
-
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1470px){
-    .invoice{     
+@media screen and (min-width: 1280px) and (max-width: 1470px) {
+    .invoice {
         width: auto;
         margin-left: 0px;
         margin: 30px;
     }
-    /* .dropDown1{
-        display: none;
-    } */
-} 
 
-/* @media screen and (min-width: 1471px) {
-    .dropDown1{
-        display: none;
-    }
-} */
-
-
-
-
-
-/* .dropdown {
-    position: relative;
-    display: inline-block;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-} */
+
 
 
 
 /* toggle css */
-.sidBar{
+.sidBar {
     background-color: white;
     width: 170px;
     /* height: 675px; */
     height: auto;
     width: 242px;
-  }
-  .sidBar img{
+}
+
+.sidBar img {
     height: 20px;
     padding-top: 2px;
-  }
-  .sidBar div{
+}
+
+.sidBar div {
     margin: 10px 30px;
     width: 130px;
     font-size: small;
-  }
-  .sidBar div p{
+}
+
+.sidBar div p {
     display: inline;
     font-size: 16px;
     /* margin-block-end: 0%; */
     margin-left: 12px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  .sidBar .dashboard p{
+}
+
+.sidBar .dashboard p {
     /* color: red; */
-  }
-  
-  .sidBar .dashboard{
-  
+}
+
+.sidBar .dashboard {
+
     /* background-color: #ffadad; */
     /* background: #FFF3F4 0% 0% no-repeat padding-box; */
     border-radius: 5px;
-  }
-  .sidBar .dashboard, .Inbox,.Analysis,.History,.Users,.Maintenance,.Setting{
+}
+
+.sidBar .dashboard,
+.Inbox,
+.Analysis,
+.History,
+.Users,
+.Maintenance,
+.Setting {
     padding-left: 17px;
     display: flex;
     align-items: center;
     border-right-width: 0px;
     width: 183px;
     height: 43px;
-  }
+}
 
-  .SidBar {
+.SidBar {
     height: 100%;
     width: 0;
     position: fixed;
@@ -865,59 +930,52 @@ style="border: 1px dashed #ADADAD; border-radius: 5px;"   add karvani chhe aa da
     overflow-x: hidden;
     transition: 0.5s;
     /* padding-top: 60px; */
-  }
-  
-  .SidBar a {
+}
+
+.SidBar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #000000;
     display: block;
     transition: 0.3s;
-  }
-  
-  .SidBar a:hover {
+}
+
+.SidBar a:hover {
     color: #f1f1f1;
-  }
-  
-  .SidBar .closebtn {
+}
+
+.SidBar .closebtn {
     position: absolute;
     top: -6px;
     right: 0;
     font-size: 36px;
-  }
-  
-  .openbtn {
+}
+
+.openbtn {
     font-size: 20px;
     cursor: pointer;
     /* background-color: #111; */
     color: white;
     padding: 10px 15px;
     border: none;
-  }
-  
-  .openbtn:hover {
+}
+
+.openbtn:hover {
     /* background-color: #444; */
-  }
-  
-  #main {
+}
+
+#main {
     transition: margin-left .5s;
     padding: 16px;
-  }
+}
 
 
 /* toggle mediaquery */
-@media screen and (min-width:700px) and (max-width: 1000px) {
-    /* .mainContent .sidBar{
-        display: none;
-    }
-    .main #mySidBar{
-        margin-top: 80px;
-    }  */
-}
+
 
 @media screen and (min-width:1280px) and (max-width: 2000px) {
-    .main #mySidBar{
+    .main #mySidBar {
         display: none;
     }
 }
