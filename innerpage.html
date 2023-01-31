@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/innerpage.css"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Innerpage</title>
 </head>
@@ -15,10 +14,39 @@
 <body>
     <div class="main">
 
+        <!-- Sidbar  -->
+        <div id="mySidBar" class="SidBar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="col-lg-2 sidBar">
+                <div class="dashboard"><img src="images/dashboard-default.svg" />
+                    <p>Dashboard</p>
+                </div>
+                <div class="Analysis" style="color: red;"><img src="images/graph-active.svg" />
+                    <p>Analysis</p>
+                </div>
+                <div class="Inbox"><img src="images/inbox-default.svg" />
+                    <p>Inbox</p>
+                </div>
+                <div class="History"><img src="images/clock-default.svg" />
+                    <p>History</p>
+                </div>
+                <div class="Users"><img src="images/user-default.svg" />
+                    <p>Users</p>
+                </div>
+                <div class="Maintenance"><img src="images/maintenance-default.svg" />
+                    <p>Maintenance</p>
+                </div>
+                <div class="Setting"><img src="images/setting-default.svg" />
+                    <p>Setting</p>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Navbar Started Here -->
         <nav class="flexbox">
             <div class="flex-item item1">
-                <img src="images/menu-bar.svg" alt="" class="menuBar">
+                <button class="menuBar" onclick="openNav()" style="border: none; background: transparent;"><img src="images/menu-bar.svg" alt=""></button>
                 <img src="images/header-logo.svg" alt="" class="headerLogo">
                 <img src="images/search-icon.svg" alt="" class="searchIcon">
                 <span class="search">Search</span>
@@ -40,7 +68,7 @@
                         <p>Dashboard</p>
                     </div>
                     <div class="Analysis"><img src="images/graph-active.svg" />
-                        <p>Analysis</p>
+                        <p style="color: red;">Analysis</p>
                     </div>
                     <div class="Inbox"><img src="images/inbox-default.svg" />
                         <p>Inbox</p>
@@ -63,10 +91,15 @@
                     <span class="headings">One Column</span>
                     <div class="oneColumn d-flex" style="flex-direction: column;">
                         <input type="text" class="form-control" placeholder="Name">
-                        <select class="form-control">
+                        <select class="form-control dropdown">
                             <option>Dropdown</option>
+                            <!-- <option>Dropdown</option> -->
+                            <!-- <option>Dropdown</option> -->
                         </select>
-                        <!-- <select name="Dropdown" id=""></select> -->
+                        <!-- <input type="dropdown "> -->
+                        <!-- <select name="form-control Dropdown" class="" id="">
+                            <option value="DropDown">Dropdown</option>
+                        </select> -->
                         <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Multiple line"
                             style="height: 130px;"></textarea>
                     </div>
@@ -125,7 +158,7 @@
                         <div class="col-sm-4">
                             <div class="form-group floating-label form-ripple">
                                 <div class="form-group">
-                                    <input type="disabled" class="form-control" id="disabled" autocomplete="off">
+                                    <input type="disabled" class="form-control" id="disabled" autocomplete="off" style="border: 1px dashed #ADADAD;">
                                     <label for="disabled">Disabled</label>
                                 </div>
                             </div>
@@ -241,19 +274,11 @@
                     <div class="smallHeadings">Tabs</div>
 
                     <div class="d-flex" style="justify-content: start; margin-left: 10px;">
-                        <div class="tab1">Tab 1</div>
-                        <div class="tab2">Tab 2</div>
-                        <div class="tab3">Tab 3</div>
+                        <u class="tab1">Tab 1</u>
+                        <u class="tab2" style="text-decoration: none;">Tab 2</u>
+                        <u class="tab3" style="text-decoration: none;">Tab 3</u>
                     </div>
-                    <div class="singleLine"></div>
-                    <!-- <table class="singleLine" style="border-spacing:0px;margin-top:5%;margin-left:2%" cellpadding="0" width="25%">
-                        <tbody>
-                          <tr>
-                            <td>Some text here</td>
-                          </tr>
-
-                        </tbody>
-                        </table> -->
+                        <u class="singleLine"></u>
                     <div class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                         Ipsum has
                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -263,44 +288,6 @@
                         into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
                         with the
                         release of Letraset sheets containing</div>
-
-                    <!-- <div class="tabs">Tabs</div>
-                    <div class="tab1">Tab 1</div>
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="tab2">Tab 2</div>
-                    <div class="tab3">Tab 3</div>
-
-                    <div class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has
-                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley of type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the leap
-                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                        with the
-                        release of Letraset sheets containing</div> -->
-                    <!-- <div class="container">
-                        <ul class="nav nav-tab" style="border-bottom: 1px solid;">
-                            <li><a data-toggle="tab" href="#menu1" style="color: red; border: 1px red;">Tab 1</a></li>
-                            <li><a data-toggle="tab" href="#menu2" style="color: #ADADAD;">Tab 2</a></li>
-                            <li><a data-toggle="tab" href="#menu3" style="color: #ADADAD;">Tab 3</a></li>
-                        </ul>
-
-                        <div class="tab-content">
-                            <div id="menu1" class="tab-pane fade active in">
-                                <h3>Tab 1</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing.</p>
-                            </div>
-
-                        </div>
-                    </div> -->
-
 
                 </div>
                 <script src="js/bootstrap.bundle.min.js"></script>

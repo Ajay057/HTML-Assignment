@@ -12,11 +12,38 @@
 
 <body>
     <div class="main">
+        
+        <div id="mySidBar" class="SidBar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="col-lg-2 sidBar">
+                <div class="Analysis"><img src="images/dashboard-active.svg" />
+                    <p  style="color: red;">Dashboard</p>
+                </div>
+                <div class="Inbox"><img src="images/graph-default.svg" />
+                    <p>Analysis</p>
+                </div>
+                <div class="Inbox"><img src="images/inbox-default.svg" />
+                    <p>Inbox</p>
+                </div>
+                <div class="History"><img src="images/clock-default.svg" />
+                    <p>History</p>
+                </div>
+                <div class="Users"><img src="images/user-default.svg" />
+                    <p>Users</p>
+                </div>
+                <div class="Maintenance"><img src="images/maintenance-default.svg" />
+                    <p>Maintenance</p>
+                </div>
+                <div class="Setting"><img src="images/setting-default.svg" />
+                    <p>Setting</p>
+                </div>
+            </div>
+        </div>
 
         <!-- Navbar Started Here -->
         <nav class="flexbox">
             <div class="flex-item item1">
-                <img src="images/menu-bar.svg" alt="" class="menuBar">
+                <button class="menuBar" onclick="openNav()" style="border: none; background: transparent;"><img src="images/menu-bar.svg" alt=""></button>
                 <img src="images/header-logo.svg" alt="" class="headerLogo">
                 <img src="images/search-icon.svg" alt="" class="searchIcon">
                 <span class="search">Search</span>
@@ -24,13 +51,14 @@
             <div class="flex-item item2">
                 <img src="images/notification-icon.svg" alt="" class="notificationIcon">
                 <img src="images/profile.png" alt="" class="profile">
+                <!-- data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" :::for tooltip-->
                 <span class="name1">John Doe</span>
 
-                <!-- <div class="dropdown">
+                <!-- <div class="dropDown1">
                     <img src="images/downward-arrow.svg" alt="">
-                  <div class="dropdown-content">
-                    <span class="name1">John Doe</span>
-                    <img src="images/notification-icon.svg" alt="" class="notificationIcon">
+                  <div class="dropDown1-content">
+                    <span class="name2">John Doe</span>
+                    <img src="images/downward-arrow.svg" alt="" class="notificationIcon">
                   </div>
                 </div> -->
 
@@ -42,12 +70,12 @@
         <!-- Page Content Starts here -->
         <div class="mainContent container-fluid">
             <!-- Sidebar html starts here -->
-            <div class="row">
+            <div class="row rowMain">
                 <div class="col-lg-2 sidBar">
-                    <div class="dashboard"><img src="images/dashboard-active.svg" />
-                        <p>Dashboard</p>
+                    <div class="Analysis"><img src="images/dashboard-active.svg" />
+                        <p style="color: red;">Dashboard</p>
                     </div>
-                    <div class="Analysis"><img src="images/graph-default.svg" />
+                    <div class="Inbox"><img src="images/graph-default.svg" />
                         <p>Analysis</p>
                     </div>
                     <div class="Inbox"><img src="images/inbox-default.svg" />
@@ -137,16 +165,14 @@
                                         <p>Canada</p>
                                     </div>
                                 </div>
-                                <div style=" display: flex;height: 20px;">
+                                <div style="display: flex;justify-content: space-between;height: 20px;width: 262px;">
                                     <div style="display: flex; margin: 0px 0px 0px 30px;">
-                                        <div
-                                            style="background-color:#ec6a47; height: 15px;width: 15px;border-radius: 100px;">
+                                        <div style="background-color:#ec6a47; height: 15px;width: 15px;border-radius: 100px;">
                                         </div>
                                         <p>Russia</p>
                                     </div>
                                     <div style="display: flex;margin: 0px 0px 0px 30px;">
-                                        <div
-                                            style="background-color:#d7d756; height: 15px;width: 15px;border-radius: 100px;">
+                                        <div style="background-color:#d7d756; height: 15px;width: 15px;border-radius: 100px;">
                                         </div>
                                         <p>India</p>
                                     </div>
@@ -267,6 +293,7 @@
         </div>
         <!-- Page Content Ends here -->
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/custom.js"></script>
     
 </body>
 
